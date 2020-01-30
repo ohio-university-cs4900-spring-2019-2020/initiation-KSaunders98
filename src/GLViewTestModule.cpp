@@ -246,11 +246,11 @@ void Aftr::GLViewTestModule::loadMap()
    wo->setLabel( "Grass" );
    worldLst->push_back( wo );
 
-   cube = WO::New(shinyRedPlasticCube, Vector(1, 1, 1), MESH_SHADING_TYPE::mstFLAT);
-   cube->setPosition(Vector(0, 0, 5));
-   cube->renderOrderType = RENDER_ORDER_TYPE::roOPAQUE;
-   cube->setLabel("Cube");
-   worldLst->push_back(cube);
+   this->cube = WO::New(shinyRedPlasticCube, Vector(1, 1, 1), MESH_SHADING_TYPE::mstFLAT);
+   this->cube->setPosition(Vector(40, 0, 5));
+   this->cube->renderOrderType = RENDER_ORDER_TYPE::roOPAQUE;
+   this->cube->setLabel("Cube");
+   worldLst->push_back(this->cube);
 
    ////Create the infinite grass plane that uses the Open Dynamics Engine (ODE)
    //wo = WOStatic::New( grass, Vector(1,1,1), MESH_SHADING_TYPE::mstFLAT );
